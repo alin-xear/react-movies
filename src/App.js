@@ -19,10 +19,17 @@ export default function App() {
 
   const handleSelectMovie = (id) => {
     setSelectedId((selectedId) => (selectedId === id ? null : id));
+
+    if (window.innerWidth < 991) {
+      document.querySelectorAll(".box")[1].scrollIntoView();
+    }
   };
 
   function handleCloseMovie() {
     setSelectedId(null);
+    if (window.innerWidth < 991) {
+      document.querySelectorAll(".box")[0].scrollIntoView();
+    }
   }
 
   const handleAddWatched = (movie) => {

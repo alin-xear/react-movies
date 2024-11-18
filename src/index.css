@@ -396,3 +396,25 @@ EMPTY STAR
 </svg>
 
 */
+
+@media (max-width: 991px) {
+  .nav-bar {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .search,
+  .box {
+    width: auto;
+    margin-top: 1rem;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .summary div {
+    flex-wrap: wrap;
+  }
+  .num-results {
+    justify-self: auto;
+    text-align: center;
+  }
+}
